@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <div>
     <Link to="/">
-      <h1 className="text-center text-warning mt-3 mb-4 header">Coin Charts</h1>
+      <h1 className="text-center text-warning mt-3 mb-4 header">Crypto Charts</h1>
       </Link>
     </div>
   );
