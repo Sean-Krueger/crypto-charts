@@ -2,12 +2,17 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const Coin = ({ coin, deleteCoin }) => {
+
+  const formatter = new Intl.NumberFormat('en-US', {
+    style: 'currency',
+    currency: 'USD',
+});
   return (
     <Link to={`/coins/${coin.id}`} className="text-decoration-none my-1 coin">
-      <li className="coinlist-item list-group-item list-group-item-action d-flex justify-content-between align-items-center text-dark">
+      <li className="coinlist-item list-group-item list-group-item-action list-group-item-info 
+      rounded-top-right-20 d-flex justify-content-between align-items-center text-dark">
         <img className="coinlist-image" src={coin.image} alt="" />
-        {/* <h1 className="coinlist-item list-group-item">{coin.name}</h1> */}
-        <span className="text-decoration-none">{coin.current_price}</span>
+        <span className="text-decoration-none">{formatter.format(coin.current_price)}</span>
 
         <span
           className={

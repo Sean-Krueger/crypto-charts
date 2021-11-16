@@ -10,11 +10,10 @@ const AddCoin = () => {
     "ripple",
     "tether",
     "dogecoin",
-    "bitcoin-cash",
     "litecoin",
     "solana",
-    "eos",
-    "okb",
+    "polkadot",
+    "chainlink",
     "tezos",
     "cardano",
   ];
@@ -28,10 +27,10 @@ const AddCoin = () => {
     <div className="dropdown">
       <button
         onClick={() => setIsActive(!isActive)}
-        className="btn btn-primary dropdown-toggle"
+        className="btn btn-warning dropdown-toggle"
         type="button"
       >
-        Add Coin
+        Add Your Crypto
       </button>
       <div className={isActive ? "dropdown-menu show" : "dropdown-menu"}>
         {availableCoins.map((el) => {
