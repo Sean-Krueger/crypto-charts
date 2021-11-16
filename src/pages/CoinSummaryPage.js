@@ -1,14 +1,14 @@
-import React from 'react'
+import React from "react";
+import AddCoin from "../components/AddCoin";
 import CoinList from "../components/CoinList";
-import Header from "../components/Header";
 
-const CoinSumarryPage = () => {
-    return (
-        <div>
-            <Header/>
-            <CoinList />
-        </div>
-    )
-}
+const CoinSummaryPage = () => {
+  return (
+    <div className="coinsummary shadow border p-2 rounded mt-2 bg-light">
+      <AddCoin />
+      <CoinList />
+    </div>
+  );
+};
 
-export default CoinSumarryPage
+export default CoinSummaryPage;

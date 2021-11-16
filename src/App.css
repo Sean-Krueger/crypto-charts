@@ -1,41 +1,35 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none !important;
-  }
-  
-  body {
-    background-color: #192841;
-  }
-  
-  ul {
-    list-style: none;
-  }
-  
-  .coinlist-image {
-    width: 50px;
-  }
-  
-  .coinlist-item {
-    display: flex;
-  }
-  
-  .coinsummary {
-    border-color: white !important;
-    border-style: outset !important;
-  }
-  
-  .coin-data-category {
-    font-size: 10px;
-  }
-  
-  .delete-icon {
-    display: none;
-    position: absolute;
-    right: 6px;
-  }
-  
-  .coin:hover .delete-icon {
-    display: block;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none !important;
+}
+.header{
+  font-family: Pacifico;
+}
+body {
+  background-color: black;
+}
+
+ul {
+  list-style: none;
+}
+
+.coinlist-image {
+  width: 50px;
+}
+
+.coinlist-item {
+  display: flex;
+  border-radius: 125px;
+}
+
+.coinsummary {
+  border-color: gold !important;
+  border-style: outset !important;
+  background-color: black;
+}
+
+.coin-data-category {
+  font-size: 10px;
+}

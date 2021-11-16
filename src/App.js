@@ -1,6 +1,5 @@
 import React from "react";
-import ReactDOM from "react-dom"
-import { Route, BrowserRouter, Routes, Redirect} from "react-router-dom";
+import { BrowserRouter, Route } from "react-router-dom";
 import CoinDetailPage from "./pages/CoinDetailPage";
 import CoinSummaryPage from "./pages/CoinSummaryPage";
 import Header from "./components/Header";
@@ -9,18 +8,15 @@ import { WatchListContextProvider } from "./context/watchListContext";
 
 const App = () => {
   return (
-    <WatchListContextProvider>
-    <BrowserRouter>
     <div className="container">
-     <CoinSummaryPage/>
-        <Routes>
+      <WatchListContextProvider>
+        <BrowserRouter>
+          <Header />
           <Route exact path="/" component={CoinSummaryPage} />
           <Route path="/coins/:id" component={CoinDetailPage} />
-        </Routes>
-
+        </BrowserRouter>
+      </WatchListContextProvider>
     </div>
-    </BrowserRouter>
-    </WatchListContextProvider>
   );
 };
 
